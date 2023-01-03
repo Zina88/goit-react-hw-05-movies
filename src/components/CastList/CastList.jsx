@@ -22,12 +22,12 @@ export default function CastList({ actors }) {
         {actors.map(({ id, name, profile_path, popularity }) => (
           <Item key={id}>
             <Img
-              src={profile_path ? `https://image.tmdb.org/t/p/w200/${profile_path}` : noAvatar}
+              src={profile_path ? `https://image.tmdb.org/t/p/w200${profile_path}` : noAvatar}
               alt={name}
             />
             <Name>{name}</Name>
             <Rating>
-              Rating: <b>{popularity}</b>
+              Rating: <b>{popularity ? popularity.toFixed(1) : '-'}</b>
             </Rating>
           </Item>
         ))}

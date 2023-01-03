@@ -29,28 +29,54 @@ export const Item = styled.li`
 
 export const Name = styled.h3`
   color: ${p => p.theme.colors.primary};
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  font-size: 14px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
 `;
 
 export const Rating = styled.p`
   text-align: center;
   margin-bottom: 10px;
+  font-size: 14px;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
 `;
 
 export const Img = styled.img`
   padding: 2px;
   margin-bottom: 10px;
-  width: 100%;
+  height: 70%;
 `;
 
 export const Alert = styled.h3`
-  padding: 15px;
   color: ${p => p.theme.colors.accent};
+  font-size: 14px;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
 `;
 
 export const Wrapper = styled.div`

@@ -30,7 +30,7 @@ export const Logo = styled(GiFilmStrip)`
   fill: ${p => p.theme.colors.white};
   width: 30px;
   height: 30px;
-  margin-right: 15px;
+  margin-right: 12px;
   transition: all 300ms linear;
 
   &:hover {

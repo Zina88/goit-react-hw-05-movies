@@ -25,7 +25,7 @@ export default function MoviesList({ movies }) {
               <Title>{movies.title}</Title>
               <VoteWrapper>
                 <p>
-                  vote average:{' '}
+                  vote average:
                   <Vote>{movies.vote_average ? movies.vote_average.toFixed(1) : '-'}</Vote>
                 </p>
                 <p>
